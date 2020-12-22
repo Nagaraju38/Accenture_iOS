@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6CA3414AF5C77BC7C24BB80 /* Pods_Accenture_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922FFBAE8C1DF8F13385B922 /* Pods_Accenture_iOS.framework */; };
+		DD5526A82591045400B56A9F /* FactTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5526A72591045400B56A9F /* FactTableCell.swift */; };
+		DD5526AB2591050A00B56A9F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5526AA2591050A00B56A9F /* APIService.swift */; };
+		DD5526AD2591067B00B56A9F /* FactTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5526AC2591067B00B56A9F /* FactTableDataSource.swift */; };
+		EAA6235225906714004C763C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA6235125906714004C763C /* AppDelegate.swift */; };
+		EAA6235425906714004C763C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA6235325906714004C763C /* SceneDelegate.swift */; };
+		EAA6235625906714004C763C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA6235525906714004C763C /* ViewController.swift */; };
+		EAA6235B25906715004C763C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA6235A25906715004C763C /* Assets.xcassets */; };
+		EAA6235E25906715004C763C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA6235C25906715004C763C /* LaunchScreen.storyboard */; };
+		EAA6236925906715004C763C /* Accenture_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA6236825906715004C763C /* Accenture_iOSTests.swift */; };
+		EAA6237425906715004C763C /* Accenture_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA6237325906715004C763C /* Accenture_iOSUITests.swift */; };
+		EAA623832590752C004C763C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA623822590752C004C763C /* UserModel.swift */; };
+		EAA6238725907597004C763C /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA6238625907597004C763C /* FactsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAA6236525906715004C763C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAA6234625906714004C763C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAA6234D25906714004C763C;
+			remoteInfo = Accenture_iOS;
+		};
+		EAA6237025906715004C763C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAA6234625906714004C763C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAA6234D25906714004C763C;
+			remoteInfo = Accenture_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		922FFBAE8C1DF8F13385B922 /* Pods_Accenture_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Accenture_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21884478E9AB0FACEF956C3 /* Pods-Accenture_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accenture_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Accenture_iOS/Pods-Accenture_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DD5526A72591045400B56A9F /* FactTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableCell.swift; sourceTree = "<group>"; };
+		DD5526AA2591050A00B56A9F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DD5526AC2591067B00B56A9F /* FactTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableDataSource.swift; sourceTree = "<group>"; };
+		E433C8B51E1F717737A7DAE4 /* Pods-Accenture_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Accenture_iOS.release.xcconfig"; path = "Target Support Files/Pods-Accenture_iOS/Pods-Accenture_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		EAA6234E25906714004C763C /* Accenture_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accenture_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA6235125906714004C763C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAA6235325906714004C763C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EAA6235525906714004C763C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAA6235A25906715004C763C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAA6235D25906715004C763C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAA6235F25906715004C763C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA6236425906715004C763C /* Accenture_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Accenture_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA6236825906715004C763C /* Accenture_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accenture_iOSTests.swift; sourceTree = "<group>"; };
+		EAA6236A25906715004C763C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA6236F25906715004C763C /* Accenture_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Accenture_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA6237325906715004C763C /* Accenture_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accenture_iOSUITests.swift; sourceTree = "<group>"; };
+		EAA6237525906715004C763C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA623822590752C004C763C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		EAA6238625907597004C763C /* FactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAA6234B25906714004C763C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CA3414AF5C77BC7C24BB80 /* Pods_Accenture_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA6236125906715004C763C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA6236C25906715004C763C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B5202CE13A948678E2D3AAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A21884478E9AB0FACEF956C3 /* Pods-Accenture_iOS.debug.xcconfig */,
+				E433C8B51E1F717737A7DAE4 /* Pods-Accenture_iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		51C04F80239B37018969B185 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				922FFBAE8C1DF8F13385B922 /* Pods_Accenture_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD5526A62591042500B56A9F /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				DD5526A72591045400B56A9F /* FactTableCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		DD5526A9259104A600B56A9F /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				DD5526AA2591050A00B56A9F /* APIService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		EAA6234525906714004C763C = {
+			isa = PBXGroup;
+			children = (
+				EAA6235025906714004C763C /* Accenture_iOS */,
+				EAA6236725906715004C763C /* Accenture_iOSTests */,
+				EAA6237225906715004C763C /* Accenture_iOSUITests */,
+				EAA6234F25906714004C763C /* Products */,
+				2B5202CE13A948678E2D3AAC /* Pods */,
+				51C04F80239B37018969B185 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EAA6234F25906714004C763C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAA6234E25906714004C763C /* Accenture_iOS.app */,
+				EAA6236425906715004C763C /* Accenture_iOSTests.xctest */,
+				EAA6236F25906715004C763C /* Accenture_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAA6235025906714004C763C /* Accenture_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DD5526A9259104A600B56A9F /* WebService */,
+				DD5526A62591042500B56A9F /* TableCells */,
+				EAA6238125907444004C763C /* Model */,
+				EAA623852590757C004C763C /* ViewModel */,
+				EAA62388259077D0004C763C /* Controller */,
+				EAA6235125906714004C763C /* AppDelegate.swift */,
+				EAA6235325906714004C763C /* SceneDelegate.swift */,
+				EAA6235A25906715004C763C /* Assets.xcassets */,
+				EAA6235C25906715004C763C /* LaunchScreen.storyboard */,
+				EAA6235F25906715004C763C /* Info.plist */,
+			);
+			path = Accenture_iOS;
+			sourceTree = "<group>";
+		};
+		EAA6236725906715004C763C /* Accenture_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAA6236825906715004C763C /* Accenture_iOSTests.swift */,
+				EAA6236A25906715004C763C /* Info.plist */,
+			);
+			path = Accenture_iOSTests;
+			sourceTree = "<group>";
+		};
+		EAA6237225906715004C763C /* Accenture_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAA6237325906715004C763C /* Accenture_iOSUITests.swift */,
+				EAA6237525906715004C763C /* Info.plist */,
+			);
+			path = Accenture_iOSUITests;
+			sourceTree = "<group>";
+		};
+		EAA6238125907444004C763C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAA623822590752C004C763C /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAA623852590757C004C763C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EAA6238625907597004C763C /* FactsViewModel.swift */,
+				DD5526AC2591067B00B56A9F /* FactTableDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EAA62388259077D0004C763C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAA6235525906714004C763C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAA6234D25906714004C763C /* Accenture_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA6237825906715004C763C /* Build configuration list for PBXNativeTarget "Accenture_iOS" */;
+			buildPhases = (
+				0389ADA24BB0117D37E69AA8 /* [CP] Check Pods Manifest.lock */,
+				EAA6234A25906714004C763C /* Sources */,
+				EAA6234B25906714004C763C /* Frameworks */,
+				EAA6234C25906714004C763C /* Resources */,
+				9782CB73306DEB1A64A11C85 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Accenture_iOS;
+			productName = Accenture_iOS;
+			productReference = EAA6234E25906714004C763C /* Accenture_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAA6236325906715004C763C /* Accenture_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA6237B25906715004C763C /* Build configuration list for PBXNativeTarget "Accenture_iOSTests" */;
+			buildPhases = (
+				EAA6236025906715004C763C /* Sources */,
+				EAA6236125906715004C763C /* Frameworks */,
+				EAA6236225906715004C763C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAA6236625906715004C763C /* PBXTargetDependency */,
+			);
+			name = Accenture_iOSTests;
+			productName = Accenture_iOSTests;
+			productReference = EAA6236425906715004C763C /* Accenture_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAA6236E25906715004C763C /* Accenture_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA6237E25906715004C763C /* Build configuration list for PBXNativeTarget "Accenture_iOSUITests" */;
+			buildPhases = (
+				EAA6236B25906715004C763C /* Sources */,
+				EAA6236C25906715004C763C /* Frameworks */,
+				EAA6236D25906715004C763C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAA6237125906715004C763C /* PBXTargetDependency */,
+			);
+			name = Accenture_iOSUITests;
+			productName = Accenture_iOSUITests;
+			productReference = EAA6236F25906715004C763C /* Accenture_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAA6234625906714004C763C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Goutham;
+				TargetAttributes = {
+					EAA6234D25906714004C763C = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					EAA6236325906715004C763C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = EAA6234D25906714004C763C;
+					};
+					EAA6236E25906715004C763C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = EAA6234D25906714004C763C;
+					};
+				};
+			};
+			buildConfigurationList = EAA6234925906714004C763C /* Build configuration list for PBXProject "Accenture_iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAA6234525906714004C763C;
+			productRefGroup = EAA6234F25906714004C763C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAA6234D25906714004C763C /* Accenture_iOS */,
+				EAA6236325906715004C763C /* Accenture_iOSTests */,
+				EAA6236E25906715004C763C /* Accenture_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAA6234C25906714004C763C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA6235E25906715004C763C /* LaunchScreen.storyboard in Resources */,
+				EAA6235B25906715004C763C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA6236225906715004C763C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA6236D25906715004C763C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0389ADA24BB0117D37E69AA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Accenture_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9782CB73306DEB1A64A11C85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Accenture_iOS/Pods-Accenture_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Accenture_iOS/Pods-Accenture_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Accenture_iOS/Pods-Accenture_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAA6234A25906714004C763C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA6235625906714004C763C /* ViewController.swift in Sources */,
+				EAA6238725907597004C763C /* FactsViewModel.swift in Sources */,
+				EAA6235225906714004C763C /* AppDelegate.swift in Sources */,
+				DD5526A82591045400B56A9F /* FactTableCell.swift in Sources */,
+				EAA623832590752C004C763C /* UserModel.swift in Sources */,
+				EAA6235425906714004C763C /* SceneDelegate.swift in Sources */,
+				DD5526AD2591067B00B56A9F /* FactTableDataSource.swift in Sources */,
+				DD5526AB2591050A00B56A9F /* APIService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA6236025906715004C763C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA6236925906715004C763C /* Accenture_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA6236B25906715004C763C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA6237425906715004C763C /* Accenture_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAA6236625906715004C763C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAA6234D25906714004C763C /* Accenture_iOS */;
+			targetProxy = EAA6236525906715004C763C /* PBXContainerItemProxy */;
+		};
+		EAA6237125906715004C763C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAA6234D25906714004C763C /* Accenture_iOS */;
+			targetProxy = EAA6237025906715004C763C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAA6235C25906715004C763C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA6235D25906715004C763C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAA6237625906715004C763C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAA6237725906715004C763C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAA6237925906715004C763C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A21884478E9AB0FACEF956C3 /* Pods-Accenture_iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5KE72YXD4;
+				INFOPLIST_FILE = Accenture_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goutham.Accenture-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAA6237A25906715004C763C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E433C8B51E1F717737A7DAE4 /* Pods-Accenture_iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5KE72YXD4;
+				INFOPLIST_FILE = Accenture_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goutham.Accenture-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAA6237C25906715004C763C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5KE72YXD4;
+				INFOPLIST_FILE = Accenture_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goutham.Accenture-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Accenture_iOS.app/Accenture_iOS";
+			};
+			name = Debug;
+		};
+		EAA6237D25906715004C763C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5KE72YXD4;
+				INFOPLIST_FILE = Accenture_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goutham.Accenture-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Accenture_iOS.app/Accenture_iOS";
+			};
+			name = Release;
+		};
+		EAA6237F25906715004C763C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5KE72YXD4;
+				INFOPLIST_FILE = Accenture_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goutham.Accenture-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Accenture_iOS;
+			};
+			name = Debug;
+		};
+		EAA6238025906715004C763C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5KE72YXD4;
+				INFOPLIST_FILE = Accenture_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goutham.Accenture-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Accenture_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAA6234925906714004C763C /* Build configuration list for PBXProject "Accenture_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA6237625906715004C763C /* Debug */,
+				EAA6237725906715004C763C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAA6237825906715004C763C /* Build configuration list for PBXNativeTarget "Accenture_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA6237925906715004C763C /* Debug */,
+				EAA6237A25906715004C763C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAA6237B25906715004C763C /* Build configuration list for PBXNativeTarget "Accenture_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA6237C25906715004C763C /* Debug */,
+				EAA6237D25906715004C763C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAA6237E25906715004C763C /* Build configuration list for PBXNativeTarget "Accenture_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA6237F25906715004C763C /* Debug */,
+				EAA6238025906715004C763C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAA6234625906714004C763C /* Project object */;
+}
